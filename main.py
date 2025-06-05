@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv
 from contextlib import asynccontextmanager
 
-from routes import root, trending, health
+from routes import root, trending, health, product_hunt_trending
 from dependencies import get_scraper
 
 load_dotenv()
@@ -52,6 +52,7 @@ app.add_middleware(
 app.include_router(root.router)
 app.include_router(trending.router)
 app.include_router(health.router)
+app.include_router(product_hunt_trending.router)
 
 if __name__ == "__main__":
     import uvicorn
