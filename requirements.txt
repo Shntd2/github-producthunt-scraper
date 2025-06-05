@@ -1,6 +1,8 @@
-fastapi
-uvicorn
-beautifulsoup4
-requests
-lxml
-python-dotenv
+fastapi==0.115.12
+uvicorn==0.34.3
+requests==2.32.3
+beautifulsoup4==4.13.4
+python-dotenv==1.1.0
+pydantic==2.11.5
+pydantic-settings==2.9.1
+lxml==5.4.0

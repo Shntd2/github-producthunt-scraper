@@ -1,2 +1,2 @@
-# github-scrapper
-GitHub trending scrapper
+# github-scraper
+GitHub trending scraper
