@@ -1,6 +1,6 @@
 # GitHub Trending Scraper
 
-A FastAPI-based web scraper for GitHub trending repositories, optimized for [Glance](https://github.com/glanceapp/glance) dashboard integration
+A FastAPI-based web scraper for [GitHub trending](https://github.com/trending) repositories, optimized for [Glance](https://github.com/glanceapp/glance) dashboard integration
 
 ## Features
 - **Trending Data**: Scrapes GitHub trending repositories
