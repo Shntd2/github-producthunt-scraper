@@ -4,7 +4,7 @@ High-performance FastAPI-based web scraping service optimized for [Glance](https
 
 ## Features
 - **GitHub trending**: Provides real-time trending repositories from [GitHub trending](https://github.com/trending)
-- **Product Hunt Stories** - Provides latest trending stories and content from [Product Hunt Stories](https://www.producthunt.com/stories?ref=header_nav)
+- **Product Hunt Stories**: Provides latest trending stories and content from [Product Hunt Stories](https://www.producthunt.com/stories?ref=header_nav)
 - **Caching**: In-memory caching for improved performance
 - **Configurable**: Environment-based configuration
 - **Scalable Architecture**: Organized with APIRouter pattern
