@@ -14,8 +14,9 @@ async def root():
         "version": settings.APP_VERSION,
         "description": settings.APP_DESCRIPTION,
         "endpoints": {
-            "trending": "/trending",
+            "github-trending": "/trending",
             "health": "/health",
+            "producthunt-stories": "/product-hunt/stories"
         },
         "glance_ready": True,
         "timestamp": datetime.now().isoformat()

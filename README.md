@@ -1,9 +1,10 @@
 # GitHub Trending Scraper
 
-A FastAPI-based web scraper for [GitHub trending](https://github.com/trending) repositories, optimized for [Glance](https://github.com/glanceapp/glance) dashboard integration
+High-performance FastAPI-based web scraping service optimized for [Glance](https://github.com/glanceapp/glance) dashboard integration. Provides trending data from GitHub and Product Hunt
 
 ## Features
-- **Trending Data**: Scrapes GitHub trending repositories
+- **GitHub trending**: Provides real-time trending repositories from [GitHub trending](https://github.com/trending)
+- **Product Hunt Stories** - Provides latest trending stories and content from [Product Hunt Stories](https://www.producthunt.com/stories?ref=header_nav)
 - **Caching**: In-memory caching for improved performance
 - **Configurable**: Environment-based configuration
 - **Scalable Architecture**: Organized with APIRouter pattern
@@ -96,6 +97,36 @@ curl "http://localhost:8000/trending?language=python&since=weekly"
   "language": "typescript",
   "since": "daily",
   "updated_at": "2025-06-05T12:00:00.000Z",
+  "cached": true
+}
+```
+
+### GET `/product-hunt/stories`
+Get trending Product Hunt stories and content
+
+## Response Format
+### Stories Response
+```json
+{
+  "stories": [
+    {
+      "title": "How we built our AI-powered recommendation engine",
+      "url": "https://www.producthunt.com/stories/how-we-built-our-ai-powered",
+      "description": "",
+      "author": "Jane Smith",
+      "author_url": "https://www.producthunt.com/@janesmith",
+      "category": "how-tos",
+      "published_at": null,
+      "read_time": 5,
+      "tags": ["how-tos"],
+      "thumbnail_url": "https://ph-files.imgix.net/story-image.jpg",
+      "upvotes": 0,
+      "story_id": "12345"
+    }
+  ],
+  "count": 15,
+  "category": "how-tos",
+  "updated_at": "2025-06-11T14:30:00",
   "cached": true
 }
 ```

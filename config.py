@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings(BaseSettings):
-    APP_NAME: str = "GitHub Trending Scraper"
-    APP_DESCRIPTION: str = "Scrape GitHub trending repositories optimized for Glance dashboard"
+    APP_NAME: str = "GitHub ProductHunt Scraper"
+    APP_DESCRIPTION: str = "FastAPI-based web scraping service optimized for Glance dashboard integration. Provides trending data from GitHub and Product Hunt"
     APP_VERSION: str = "2.1"
 
     HOST: str = os.getenv("HOST")
